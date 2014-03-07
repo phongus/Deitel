@@ -7,9 +7,10 @@ public class BasePlusCommissionEmployee extends CommissionEmployee
 	
 	//	six-argument constructor
 	public BasePlusCommissionEmployee( String first, String last,
-			String ssn, double sales, double rate, double salary)
+			String ssn, Date bdate, double sales, 
+			double rate, double salary)
 	{
-		super(first, last, ssn, sales, rate);
+		super(first, last, ssn, bdate, sales, rate);
 		setBaseSalary(salary);	//	validate and store base salary
 	}	//	end six-argument BasePlusCommissionEmployee constructor
 	

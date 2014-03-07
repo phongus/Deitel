@@ -47,17 +47,17 @@ public class Date
 				"day out-of-range for the specified month and year");
 	}	//	end method checkDay
 	
-	private int getMonth()
+	public int getMonth()
 	{
 		return month;
 	}
 	
-	private int getDay()
+	public int getDay()
 	{
 			return day;
 	}
 	
-	private int getYear()
+	public int getYear()
 	{
 		return year;
 	};

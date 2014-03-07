@@ -7,9 +7,9 @@ public class SalariedEmployee extends Employee
 	
 	//	four-argument constructor
 	public SalariedEmployee(String first, String last, String ssn,
-			double salary)
+			Date bdate, double salary)
 	{
-		super(first, last, ssn);	//	pass to Employee constructor
+		super(first, last, ssn, bdate);	//	pass to Employee constructor
 		setWeeklySalary(salary);	//	validate and store salary
 	}	//	end four-argument SalariedEmployee constructor
 	

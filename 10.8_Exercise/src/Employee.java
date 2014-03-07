@@ -16,13 +16,15 @@ public abstract class Employee
 	private String firstName;
 	private String lastName;
 	private String socialSecurityNumber;
+	private Date birthDate;
 	
 	//	three-argument constructor
-	public Employee(String first, String last, String ssn)
+	public Employee(String first, String last, String ssn, Date bdate)
 	{
 		firstName = first;
 		lastName = last;
 		socialSecurityNumber = ssn;
+		birthDate = bdate;
 	}	//	end three-argument Employee constructor
 	
 	//	set first name
@@ -61,12 +63,22 @@ public abstract class Employee
 		return socialSecurityNumber;
 	}	//	end method getSocialSecurityNumber
 	
+	public void setBirthDate(Date bdate)
+	{
+		birthDate = bdate;
+	}
+	
+	public Date getBirthDate()
+	{
+		return birthDate;
+	}
+	
 	//	return String representation of Employee object
 	@Override
 	public String toString()
 	{
-		return String.format("%s %s\nsocial security number: %s",
-				getFirstName(), getLastName(), getSocialSecurityNumber());
+		return String.format("%s %s\nSocial Security Number: %s\nBirthdate: %s",
+				getFirstName(), getLastName(), getSocialSecurityNumber(), getBirthDate());
 	}	//	end method toString
 	
 	//	abstract method overridden by concrete subclasses

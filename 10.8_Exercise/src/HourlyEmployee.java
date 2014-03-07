@@ -8,9 +8,9 @@ public class HourlyEmployee extends Employee
 	
 	//	five-argument constructor
 	public HourlyEmployee(String first, String last, String ssn,
-			double hourlyWage, double hoursWorked)
+			Date bdate, double hourlyWage, double hoursWorked)
 	{
-		super(first, last, ssn);	
+		super(first, last, ssn, bdate);	
 		setWage(hourlyWage);	//	validate hourly wage
 		setHours(hoursWorked);	//	validate hours worked
 	}	//	end five-argument HourlyEmployee constructor
