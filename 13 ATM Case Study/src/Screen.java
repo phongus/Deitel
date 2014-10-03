@@ -4,7 +4,7 @@
 public class Screen 
 {
 	//	display a message without a carriage return
-	public void diplayMessage(String message)
+	public void displayMessage(String message)
 	{
 		System.out.print(message);
 	}	//	end method displayMessage

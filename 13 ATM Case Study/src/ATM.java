@@ -53,9 +53,9 @@ public class ATM
 	//	attempts to authenticate user against database
 	private void authenticateUser()
 	{
-		screen.diplayMessage("\nPlease enter your account number: ");
+		screen.displayMessage("\nPlease enter your account number: ");
 		int accountNumber = keypad.getInput();	//	input account number
-		screen.diplayMessage("\nEnter your PIN: ");	//	prompt for PIN
+		screen.displayMessage("\nEnter your PIN: ");	//	prompt for PIN
 		int pin = keypad.getInput(); //	input PIN
 		
 		//	set userAuthentigated to boolean value returned by the database
