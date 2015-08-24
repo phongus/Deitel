@@ -1,29 +1,32 @@
 /**
- * Fig. 17.4: AccountRecord.java
- * AccountRecord class maintains information for one account.
+ * Fig. 17.15: AccountRecordSerializable.java
+ * AccountRecordSerializable class for serializable objects.
  */
 
-public class AccountRecord // testuaoeuoa
+import java.io.Serializable;
+
+public class AccountRecordSerializable implements Serializable
 {
     private int account;
     private String firstName;
     private String lastName;
     private double balance;
 
-    //  no-argument constructor calls other constructor with default values
-    public AccountRecord()
+    //  no-argument constructor calls other constructor with default values.
+    public AccountRecordSerializable()
     {
-        this(0, "", "", 0.0);   //  call four-argument contsructor
-    }
+        this(0, "", "", 0.0);
+    }   //  end no-argument AccountRecordSerializable constructor
 
-    //  initialize a record
-    public AccountRecord(int acct, String first, String last, double bal)
+    //  four-argument constructor initializes a record
+    public AccountRecordSerializable(
+            int acct, String first, String last, double bal)
     {
         setAccount(acct);
         setFirstName(first);
         setLastName(last);
         setBalance(bal);
-    }   //  end four-argument AccountRecord constructor
+    }   //  end four-argument AccountRecordSerializable constructor
 
     //  set account number
     public void setAccount(int acct)
@@ -72,4 +75,4 @@ public class AccountRecord // testuaoeuoa
     {
         return balance;
     }   //  end method getBalance
-}   //  end class AccountRecord
+}   //  end class AccountRecordSerializable

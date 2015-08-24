@@ -1,10 +1,9 @@
-/**
- * Fig. 17.5: CreateTextFile.java
+package SequentialFile; /**
+ * Fig. 17.5: SequentialFile.CreateTextFile.java
  * Writing data to a sequential text file with class Formatter.
  */
 
 import java.io.FileNotFoundException;
-import java.lang.SecurityException;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
 import java.util.NoSuchElementException;
@@ -97,4 +96,4 @@ public class CreateTextFile
         if (output != null)
             output.close();
     }   //  end method closeFile
-}   //  end class CreateTextFile
+}   //  end class SequentialFile.CreateTextFile
