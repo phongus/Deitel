@@ -72,4 +72,11 @@ public class AccountRecord
     {
         return balance;
     }   //  end method getBalance
+
+    //  combine method that takes a TransactionRecord object and combines the balance of the AccountRecord object
+    // and the amount value of the TransactionRecord object
+    public void combine(TransactionRecord tr)
+    {
+        setBalance(getBalance() + tr.getAmount());
+    }
 }   //  end class SequentialFile.AccountRecord

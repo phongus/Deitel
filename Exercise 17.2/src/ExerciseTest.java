@@ -5,9 +5,10 @@ public class ExerciseTest
 {
     public static void main(String[] args)
     {
-        AccountReader application = new AccountReader();
-        application.openOldMaster();
-        //application.openNewMaster();
-        application.outputNewMaster();
+        FileMatch fileMatch = new FileMatch();
+        fileMatch.openOldMaster();
+        fileMatch.openTrans();
+        fileMatch.processTrans();
+        fileMatch.outputNewMaster();
     }
 }

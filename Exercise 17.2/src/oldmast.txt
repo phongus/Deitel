@@ -1,1 +1,4 @@
-1 Phong Tran 0.13
+100 Alan Jones 348.17
+300 Mary Smith 27.19
+500 Sam Sharp 0.00
+700 Suzy Green -14.22
