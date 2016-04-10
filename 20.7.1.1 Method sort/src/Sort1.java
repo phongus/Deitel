@@ -8,7 +8,7 @@ public class Sort1
 {
     public static void main(String[] args)
     {
-        String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
+        String[] suits = {"Hearts", "Diamonds", "Clubs", "Spadeeos"};
 
         //  Create and display a list containing the suits array elements
         List<String> list = Arrays.asList(suits);   //  create List
