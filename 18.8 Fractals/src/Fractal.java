@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 public class Fractal extends JFrame
 {
     private static final int WIDTH = 400;   //  define width of GUI
-    private static final int HEIGHT = 480;  //  define height of GUI
     private static final int MIN_LEVEL = 0, MAX_LEVEL = 15;
 
     private JButton changeColorJButton, increaseLevelJButton, decreaseLevelJButton;
