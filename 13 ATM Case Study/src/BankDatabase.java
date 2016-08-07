@@ -62,8 +62,8 @@ public class BankDatabase
 
 	//	debit an amount from Account with specified account number
 	public void debit(int userAccountNumber, double amount)
+
 	{
 		getAccount(userAccountNumber).debit(amount);
-	}
-
-}
+	}   //  end method debit
+}   //  end class BankDatabase
